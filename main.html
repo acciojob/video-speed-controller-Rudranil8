@@ -15,7 +15,16 @@
   </div>
 
 <script  src="./script.js">
-  //Your code goes here
+	const video=document.querySelector("video");
+	const playButton=document.querySelector(".play");
+	playButton.addEventListener("click", togglePlay):
+	function togglePlay(){
+		if(video.paused){
+			video.play();
+		} else {
+			video.pause();
+		}
+	}
 </script>
 </body>
 </html>
